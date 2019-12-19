@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 img {
     max-width: 100%;
@@ -74,37 +76,40 @@ body, a {
     opacity: 0.7;
 }
 
-/* ==== PRODUCTS ==== */
+/* ==== RECIPES ==== */
 
-section h2 {
+.recipes h2 {
+    display: inline-block;
     font-size: 24px;
     font-weight: bold;
-    margin: 50px 0 20px 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
-.products {
+.recipes-item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     margin-bottom: 60px;
 }
 
-.recipe img {
+.recipes-item img {
     border-radius: 15px;
     cursor: pointer;
 }
 
-.recipe h3 {
+.recipes-item h3 {
     cursor: pointer;
     font-size: 18px;
-    margin: 15px 0 10px 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-.recipe h3:hover {
+.recipes-item h3:hover {
     text-decoration: underline;
 }
 
-.recipe p {
+.recipes-item p {
     color: #777;
     font-size: 14px;
 }
@@ -114,25 +119,15 @@ section h2 {
 .footer {
     background: #eee;
     color: #999999;
-    padding: 24px 0;
+    padding: 12px 0;
     font-size: 14px;
     text-align: center;
 }
 
-/* ===== SOBRE CSS ===== */
-
-.sobre {
-    color: #111;
+footer p {
+    margin: 16px;
 }
 
-.sobre p {
-    color: #444444;
-    font-size: 18px;
-    line-height: 28px;
-    margin: 30px 0;
-}
-
-.sobre h3 {
-    font-size: 20px;
-    font-weight: bold;
+footer a {
+    color: #999;
 }

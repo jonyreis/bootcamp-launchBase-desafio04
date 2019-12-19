@@ -14,24 +14,25 @@
     </main>
     <section class="max-width">
 
-        <h2>Mais acessadas</h2>
+    <!-- ===== RECIPES ===== -->   
 
-    <!-- ===== PRODUCTS ===== -->        
+        <div class="recipes">
 
-        <div class="products">
+            <h2>Mais acessadas</h2>
 
-            {% for item in items %}
-            <div class="recipe">
+            <div class="recipes-item">
+                {% for item in items %}
+                <div id="{{ loop.index }}">
 
-                <img class="itemIndex" src="{{item.image}}" alt="Foto da receita {{item.title}}" id="{{ loop.index }}">
+                    <img src="{{item.image}}" alt="Foto da receita {{item.title}}" id="{{ loop.index }}">
 
-                <h3 class="itemIndex" id="{{ loop.index }}">{{item.title}}</h3>
-                <p>{{item.author}}</p>
+                    <h3 id="{{ loop.index }}">{{item.title}}</h3>
+                    <p>{{item.author}}</p>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
 
         </div>
-
     </section>
-    <script src="/js/openPageUser.js"></script>
+<script src="/js/openPageUser.js"></script>
 {% endblock %}

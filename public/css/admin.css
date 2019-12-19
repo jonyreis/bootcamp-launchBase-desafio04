@@ -16,21 +16,27 @@ body, a {
 
 .max-width {
     margin: 0 auto;
-    max-width: 940px;
+    max-width: 960px;
 }
 
 /* === Index === */
 
-.container h2 {
+.intro {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.intro h2 {
     color: #111;
     font-size: 24px;
     font-weight: bold;
 }
 
-.recipes {
+.recipes-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 25px;
     margin-top: 30px;
 }
 
@@ -68,12 +74,6 @@ body, a {
 }
 
 /* === Create === */
-
-.intro {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
 
 .form h3 {
     color: #111;
@@ -113,8 +113,6 @@ body, a {
     font-size: 16px;
     font-weight: bold;
     padding: 6px 20px;
-    position: absolute;
-    right: 200px;
 }
 
 /*===== Show ===== */
@@ -136,7 +134,6 @@ body, a {
 .recipe-description h1 {
     font-size: 36px;
     font-weight: bold;
-
 }
 
 .recipe-description p {
@@ -159,7 +156,6 @@ body, a {
     font-size: 18px;
     line-height: 28px;
     margin: 10px 0;
-
 }
 
 /* ==== Edit ==== */

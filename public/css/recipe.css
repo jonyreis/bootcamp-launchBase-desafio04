@@ -8,7 +8,6 @@
 .recipe-description h1 {
     font-size: 36px;
     font-weight: bold;
- 
 }
 
 .recipe-description p {
@@ -19,13 +18,6 @@
 .recipe-info {
     padding: 20px 0 40px 0;
 }
-
-/* #ingre {
-    color: #444;
-    font-size: 18px;
-    line-height: 28px;
-    margin-left: 18px;
-} */
 
 .recipe dl dt {
     color: #111;
@@ -38,7 +30,6 @@
     font-size: 18px;
     line-height: 28px;
     margin: 10px 0;
-
 }
 
 .js-accordion dd {
@@ -47,7 +38,7 @@
 }
 
 .js-accordion dt:after {
-    content: 'esconder';
+    content: 'mostrar';
     color: #999;
     font-size: 12px;
     font-weight: bold;
@@ -56,13 +47,13 @@
 }
 
 .js-accordion dt.ativo:after {
-    content: 'mostrar';
+    content: 'esconder';
 }
 
 .js-accordion dd.ativo {
     display: block;
     animation: slideDown;
-    animation-duration: 400ms;
+    animation-duration: 700ms;
 }
 
 @keyframes slideDown {

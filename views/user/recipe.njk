@@ -4,27 +4,25 @@
 
     <link rel="stylesheet" href="/css/recipe.css">
 
-    <title> {{ items.title }} | Foodfy</title>
+    <title>{{items.title}} | Foodfy</title>
 
 {% endblock %}
 
 {% block content %}
     
-    <!-- ===== PRODUTCS ===== -->
+    <!-- ===== RECIPE ===== -->
 
 <section class="max-width">
-
     <div class="recipe">
 
-        {# {% for item in items %} #}
-        <img src="{{items.image}}" alt="Fodo do {{items.title}}">
+        <img src="{{items.image}}" alt="Fodo do {{item.title}}">
         
         <div class="recipe-description">
             <h1>{{items.title}}</h1>
             <p>por {{items.author}}</p>
 
         </div>
-        <div class="recipe-info ">
+        <div class="recipe-info">
             <dl class="js-accordion">
 
                 <dt>Ingredientes</dt>
@@ -45,11 +43,8 @@
                 <dd>{{ items.information | striptags(true) | escape | nl2br }}</dd>
             </dl>
         </div>
-        {# {% endfor %} #}
 
     </div>
-
-
 </section>
 <script src="/js/show.js"></script>
 {% endblock %}
